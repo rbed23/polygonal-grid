@@ -5,114 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="scss/polygonal_grid.css">
     <title>Polygonal Grid Test</title>
-    <content>Header Content</content>
-    <script>
-    </script>
 </head>
 <body>
-        <ul class="poly-grid_list">
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 1
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 2
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 3
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 4
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 5
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 6
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 7
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 8
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 9
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 10
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 11
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 12
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 13
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 14
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 15
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 16
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 17
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 18
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 19
-                </div>
-            </li>
-            <li class="poly-grid_item">
-                <div class="poly-grid_content">
-                    Poly 20
-                </div>
-            </li>
-        </ul>
+    <select id="clipPathSelector">
+        <option value="none">None</option>
+        <option value="circle(45%)">Circle</option>
+        <option value="polygon(0 0, 50% 100%, 100% 0)">Triangle (downward)</option>
+        <option value="polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)">Rhombus</option>
+        <option value="polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0)" selected>Hexagon</option>
+        <option value="polygon(100% 75%, 50% 100%, 0 75%, 0 0, 50% 25%, 100% 0)">Chevron</option>
+    </select>
+    <ul class="poly-grid_list">
+        <li class="poly-grid_item">
+            <div class="poly-grid_content" id="content">
+                Poly 1
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 2
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 3
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 4
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 5
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 6
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 7
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 8
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 9
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 10
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 11
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 12
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 13
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 14
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 15
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 16
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 17
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 18
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 19
+            </div>
+        </li>
+        <li class="poly-grid_item">
+            <div class="poly-grid_content">
+                Poly 20
+            </div>
+        </li>
+    </ul>
 
+    <script>
+        var clipPathSelect = document.getElementById("clipPathSelector");
+        clipPathSelect.addEventListener("change", function (evt) {
+            var all_elements = document.querySelectorAll(".poly-grid_content");
+            all_elements.forEach(function(item){
+                item.style.clipPath = evt.target.value;
+            });
+        });
+    </script>
     
 </body>
 </html>

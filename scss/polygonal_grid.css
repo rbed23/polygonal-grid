@@ -56,15 +56,10 @@
           align-items: center;
   text-align: center;
   padding: 1% 3%;
-  -webkit-transition: -webkit-transform 2s clip-path;
-  transition: -webkit-transform 2s clip-path;
-  transition: transform 2s clip-path;
-  transition: transform 2s clip-path, -webkit-transform 2s clip-path;
 }
 
 .poly-grid_content:hover {
-  -webkit-clip-path: circle(45%);
-          clip-path: circle(45%);
+  background-color: lightpink;
 }
 
 @media screen and (min-width: 1440px) {
